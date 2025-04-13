@@ -1,0 +1,365 @@
+/* Algemene opmaak voor de body */
+body {
+    font-family: Arial, sans-serif; /* Gebruik van Arial voor de tekst */
+    margin: 0; /* Verwijdert standaard marge rond het lichaam */
+    padding: 0; /* Verwijdert standaard opvulling rond het lichaam */
+    background-color: #f3efea; /* Achtergrondkleur van de pagina */
+}
+
+/* Container die de pagina-inhoud bevat */
+.container {
+    width: 100%; /* Breedte van de container is 100% van het scherm */
+    max-width: 1280px; /* Maximaal breedte van de container is 1280px */
+    margin: 0 auto; /* Zorgt ervoor dat de container gecentreerd is */
+    padding: 0 20px; /* Opvulling aan de zijkanten van de container */
+    display: grid; /* Gebruik van een grid layout */
+    grid-template-columns: repeat(12, 1fr); /* Verdeelt de container in 12 gelijke kolommen */
+    gap: 20px; /* Tussenruimte tussen de grid-items */
+}
+
+/* Opmaak van de header */
+.header {
+    grid-column: 1 / -1; /* De header neemt alle 12 kolommen in beslag */
+    background-color: #8eaab2; /* Achtergrondkleur van de header */
+    padding: 20px; /* Opvulling rondom de inhoud van de header */
+    display: grid; /* Grid layout voor de header */
+    justify-content: space-between; /* Verdeelt de inhoud met ruimte ertussen */
+    align-items: center; /* Center de items verticaal */
+    text-align: right; /* Text in de header is rechts uitgelijnd */
+    flex-wrap: wrap; /* Maakt de inhoud responsief door het te laten wrappen */
+}
+
+/* Navigatie-elementen in de header */
+.navigation ul {
+    display: flex; /* Gebruik van een flexbox voor de navigatielijst */
+    gap: 20px; /* Tussenruimte tussen de lijstitems */
+    list-style: none; /* Verwijdert de standaard opsommingstekens */
+    padding: 0; /* Verwijdert opvulling van de lijst */
+    margin: 0; /* Verwijdert marge rond de lijst */
+}
+
+/* Introductie-artikel sectie */
+.intro-article {
+    grid-column: 1 / -1; /* Neemt de volledige breedte van het scherm in beslag */
+    display: grid; /* Gebruik van een grid voor de opmaak van het artikel */
+    grid-template-columns: repeat(12, 1fr); /* Verdeelt de ruimte in 12 gelijke kolommen */
+    gap: 20px; /* Tussenruimte tussen de grid-items */
+    padding: 20px; /* Opvulling rondom het artikel */
+    background-color: #fff; /* Achtergrondkleur van het artikel */
+}
+
+/* Afbeelding van het introductieartikel */
+.intro-image {
+    grid-column: 1 / 5; /* De afbeelding neemt de eerste 4 kolommen in beslag */
+    height: 249px; /* Specifieke hoogte voor de afbeelding */
+    background-color: #bce0fd; /* Achtergrondkleur van de afbeelding */
+}
+
+/* Inhoud van het introductieartikel */
+.intro-content {
+    grid-column: 5 / -1; /* Inhoud neemt de resterende ruimte vanaf kolom 5 tot het einde */
+}
+
+/* Stijl van de titel binnen de inhoud */
+.intro-content h2 {
+    font-size: 40px; /* Grootte van de titel */
+    font-family: Georgia, serif; /* Het lettertype voor de titel */
+    font-weight: bold; /* Zet de titel vet */
+}
+
+/* Stijl van de tekst binnen de inhoud */
+.intro-content p {
+    font-size: 20px; /* Grootte van de paragraaftekst */
+    font-family: Arial, sans-serif; /* Het lettertype voor de tekst */
+}
+
+/* Stijl voor de knop in het introductieartikel */
+.intro-content button {
+    background-color: #bce0fd; /* Achtergrondkleur van de knop */
+    border: none; /* Verwijdert de rand van de knop */
+    padding: 10px 20px; /* Opvulling rondom de tekst in de knop */
+    font-size: 10px; /* Tekstgrootte in de knop */
+    font-weight: bold; /* Vetgedrukte tekst in de knop */
+    cursor: pointer; /* Maakt de knop aanklikbaar */
+}
+
+/* Stijl voor citaten op de pagina */
+.quote {
+    grid-column: 1 / -1; /* Neemt de volledige breedte in beslag */
+    text-align: center; /* Centreert de tekst */
+    font-style: italic; /* Maakt de tekst schuin */
+    font-family: Georgia, serif; /* Gebruik van het Georgia lettertype */
+}
+
+/* Extra grote tekst voor citaten aan de linkerzijde */
+.quote-left, .quote-right {
+    font-size: 40px; /* Vergroot de tekstgrootte voor de citaten */
+}
+
+/* Hoogtepunten sectie */
+.highlights {
+    grid-column: 1 / -1; /* Neemt de volledige breedte in beslag */
+    padding: 20px; /* Opvulling rondom de inhoud */
+}
+
+/* Titel van de hoogtepunten sectie */
+.highlights h2 {
+    font-size: 30px; /* Grootte van de titel */
+    font-weight: bold; /* Vetgedrukte titel */
+}
+
+/* Opmaak van video's */
+.video {
+    grid-column: 1 / 9; /* Neemt de eerste 8 kolommen in beslag */
+    height: 295px; /* Specifieke hoogte voor de video */
+    background-color: #bce0fd; /* Achtergrondkleur voor de video */
+}
+
+/* Opmaak voor afbeeldingen in de hoogtepunten sectie */
+.images {
+    grid-column: 1 / -1; /* Neemt de volledige breedte in beslag */
+    display: grid; /* Gebruik van een grid voor afbeeldingen */
+    grid-template-columns: repeat(2, 1fr); /* Verdeelt de ruimte in 2 gelijke kolommen */
+    gap: 20px; /* Tussenruimte tussen de afbeeldingen */
+    margin-top: 20px; /* Ruimte boven de afbeeldingen */
+}
+
+/* Algemene opmaak voor individuele afbeeldingen */
+.image {
+    height: 295px; /* Specifieke hoogte voor de afbeelding */
+    background-color: #bce0fd; /* Achtergrondkleur van de afbeelding */
+}
+
+/* Centeren van de afbeelding in de container */
+#centered-image {
+    display: block; /* Blokniveau zodat het gecentreerd kan worden */
+    margin-left: auto; /* Automatische marges aan de linkerzijde */
+    margin-right: auto; /* Automatische marges aan de rechterzijde */
+}
+
+/* Call-to-Action sectie */
+.call-to-action {
+    grid-column: 1 / -1; /* Neemt de volledige breedte in beslag */
+    background-color: #3c6e71; /* Achtergrondkleur van de Call-to-Action sectie */
+    padding: 20px; /* Opvulling rondom de inhoud */
+    text-align: center; /* Centreert de tekst in de sectie */
+    color: #fff; /* Witte tekstkleur */
+}
+
+/* Titel van de Call-to-Action sectie */
+.call-to-action h2 {
+    font-size: 40px; /* Grootte van de titel */
+    font-family: Georgia, serif; /* Het lettertype voor de titel */
+}
+
+/* Paragraaftekst in de Call-to-Action sectie */
+.call-to-action p {
+    font-size: 14px; /* Grootte van de tekst */
+    font-family: Arial, sans-serif; /* Het lettertype voor de tekst */
+}
+
+/* Opmaak van de knop in de Call-to-Action sectie */
+.call-to-action button {
+    background-color: #dfe6f3; /* Achtergrondkleur van de knop */
+    border: none; /* Verwijdert de rand van de knop */
+    padding: 10px 20px; /* Opvulling rondom de tekst in de knop */
+    font-size: 13px; /* Tekstgrootte in de knop */
+    font-weight: bold; /* Vetgedrukte tekst in de knop */
+    cursor: pointer; /* Maakt de knop aanklikbaar */
+}
+
+/* Footer sectie */
+.footer {
+    grid-column: 1 / -1; /* Neemt de volledige breedte in beslag */
+    background-color: #272400; /* Achtergrondkleur van de footer */
+    padding: 20px; /* Opvulling rondom de footer */
+    color: #fff; /* Witte tekstkleur */
+    display: grid; /* Grid layout voor de footer */
+    grid-template-columns: repeat(4, 1fr); /* Verdeelt de footer in 4 gelijke kolommen */
+    gap: 20px; /* Tussenruimte tussen de footer-secties */
+}
+
+/* Stijl voor footer secties (zoals social media, over ons, etc.) */
+.footer-section h3 {
+    font-size: 10px; /* Klein lettertype voor de kopjes */
+    font-weight: bold; /* Vetgedrukte kopjes */
+}
+
+.footer-section p {
+    font-size: 14px; /* Grootte van de tekst */
+    margin: 5px 0; /* Ruimte boven en onder de paragrafen */
+}
+
+/* Responsieve opmaak voor schermen kleiner dan 1024px */
+@media (max-width: 1024px) {
+    .intro-article {
+        grid-template-columns: 1fr; /* Alle content in 1 kolom */
+    }
+
+    .intro-image {
+        grid-column: 1 / -1; /* De afbeelding neemt de volledige breedte in beslag */
+        height: 200px; /* Kleinere hoogte voor de afbeelding */
+    }
+
+    .intro-content {
+        grid-column: 1 / -1; /* De inhoud neemt de volledige breedte in beslag */
+    }
+
+    .video {
+        grid-column: 1 / -1; /* De video neemt de volledige breedte in beslag */
+    }
+
+    .images {
+        grid-template-columns: 1fr; /* Alle afbeeldingen in 1 kolom */
+    }
+
+    .footer {
+        grid-template-columns: repeat(2, 1fr); /* De footer in 2 kolommen */
+    }
+
+    .header {
+        padding: 15px; /* Kleinere opvulling voor de header */
+        text-align: left; /* Uitlijnen naar links */
+    }
+
+    .navigation ul {
+        gap: 15px; /* Kleinere ruimte tussen navigatielinks */
+    }
+}
+
+/* Responsieve opmaak voor schermen kleiner dan 768px */
+@media (max-width: 768px) {
+    .header {
+        padding: 10px; /* Nog kleinere opvulling voor de header */
+        flex-direction: column; /* Flexbox-items in een kolom in plaats van rij */
+        align-items: center; /* Center de items */
+    }
+
+    .navigation ul {
+        flex-direction: column; /* Lijstitems onder elkaar */
+        gap: 10px; /* Ruimte tussen de lijstitems */
+    }
+
+    .intro-article {
+        grid-template-columns: 1fr; /* Alle content in 1 kolom */
+    }
+
+    .intro-image {
+        height: 150px; /* Kleinere hoogte voor de afbeelding */
+    }
+
+    .intro-content h2 {
+        font-size: 24px; /* Kleinere titelgrootte */
+    }
+
+    .intro-content p {
+        font-size: 16px; /* Kleinere tekstgrootte */
+    }
+
+    .intro-content button {
+        font-size: 14px; /* Kleinere knoptekst */
+    }
+
+    .call-to-action h2 {
+        font-size: 30px; /* Kleinere titelgrootte voor Call-to-Action */
+    }
+
+    .call-to-action button {
+        font-size: 12px; /* Kleinere knoptekst voor Call-to-Action */
+    }
+
+    .footer {
+        grid-template-columns: 1fr; /* De footer in 1 kolom */
+    }
+}
+
+/* Algemene stijlen voor tags */
+.tag {
+    font-size: 1.2rem; /* Grotere tekst voor tags */
+    font-weight: bold; /* Vetgedrukte tags */
+    margin-top: 20px; /* Ruimte boven de tags */
+}
+
+/* Lijst van tags */
+.tags ul {
+    padding-left: 20px; /* Ruimte aan de linkerkant van de lijst */
+    margin: 5px 0 20px 0; /* Ruimte boven en onder de lijst */
+}
+
+.tags li {
+    margin-bottom: 5px; /* Ruimte onder elk lijstitem */
+    list-style-type: disc; /* Gebruik van bolletjes voor opsommingstekens */
+}
+
+/* Afdeling voor vaardigheden */
+.skills-section {
+    width: 300%; /* Breedte van de sectie is 3 keer de normale breedte */
+    max-width: 800px; /* Maximale breedte van de sectie is 800px */
+}
+
+/* Layout voor de afbeeldingen */
+.images {
+    column-count: 3; /* Verdeelt de afbeeldingen in 3 kolommen */
+    column-gap: 20px; /* Tussenruimte tussen de kolommen */
+}
+
+/* Container voor elke afbeelding */
+.image-container {
+    display: inline-block; /* Zorgt ervoor dat de afbeeldingen naast elkaar staan */
+    width: 100%; /* De container neemt de volledige breedte in beslag */
+    padding: 10px; /* Opvulling binnen de container */
+    margin-bottom: 20px; /* Ruimte onder de afbeelding */
+}
+
+.image-container p {
+    margin-bottom: 10px; /* Ruimte onder de tekst bij de afbeelding */
+}
+
+/* Tekst rechts in een bepaalde sectie */
+.text-right {
+    position: absolute; /* Absolute positionering ten opzichte van de container */
+    right: 20px; /* Plaatst de tekst 20px van de rechterkant */
+    top: 20px; /* Plaatst de tekst 20px van de bovenkant */
+    font-size: 20px; /* Grotere tekstgrootte */
+    font-weight: bold; /* Vetgedrukte tekst */
+    color: #000; /* Zwarte tekstkleur */
+    z-index: 10; /* Zorgt ervoor dat de tekst boven andere elementen wordt geplaatst */
+}
+
+/* Sociale media iconen in de footer */
+.footer-section .social-icons {
+    display: flex; /* Flexbox voor sociale iconen */
+    gap: 10px; /* Ruimte tussen de iconen */
+    margin-top: 10px; /* Ruimte boven de iconen */
+    justify-content: flex-start; /* Zorgt ervoor dat de iconen aan de linkerzijde staan */
+    align-items: center; /* Centreert de iconen verticaal */
+}
+
+/* Elke sociale media icoon */
+.footer-section .social-icon {
+    width: 24px; /* Klein formaat voor de iconen */
+    height: 24px; /* Klein formaat voor de iconen */
+    object-fit: contain; /* Zorgt ervoor dat de icoon goed past binnen de container */
+    cursor: pointer; /* Zorgt ervoor dat de icoon aanklikbaar is */
+    transition: transform 0.2s ease; /* Voegt een overgangseffect toe bij hover */
+}
+
+/* Container voor de afbeelding met border */
+.image-container {
+    border: 2px dotted #333; /* Dotted rand rondom de container */
+    padding: 15px; /* Opvulling binnen de container */
+    margin: 20px; /* Ruimte tussen de container en andere elementen */
+    border-radius: 8px; /* Afgeronde hoeken */
+    background-color: #fff; /* Witte achtergrondkleur */
+}
+
+/* Hover-effect voor de knop in het intro-content */
+.intro-content button:hover {
+    background-color: #a7c3d6; /* Donkerder blauw bij hover */
+    transition: background-color 0.3s ease; /* Verandering van achtergrondkleur met overgangseffect */
+}
+
+a:focus {
+    outline: 3px solid #ff9800; /* Duidelijke focuslijn */
+    background-color: rgba(255, 152, 0, 0.1); /* Achtergrondkleur bij focus */
+}        
