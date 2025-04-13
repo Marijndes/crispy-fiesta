@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en"> <!-- Definieer de taal van de pagina, in dit geval Engels -->
+<head>
+    <meta charset="UTF-8"> <!-- Definieert het karakterset van de pagina als UTF-8 (voor internationale tekens) -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Zorgt ervoor dat de website goed schaalt op mobiele apparaten -->
+    
+    <link href="../css/reset.css" rel="stylesheet"> <!-- Link naar een reset stylesheet om standaard styling van browsers te verwijderen -->
+    <link href="../css/style.css" rel="stylesheet"> <!-- Link naar je eigen stylesheet voor de pagina styling -->
+    <title>Marijn de Serière - Portfolio</title> <!-- De titel die in de browser tab verschijnt -->
+</head>
+<body>
+    <div class="container"> <!-- Hoofdomhulsel dat de inhoud van de pagina bevat -->
+        <header class="header"> <!-- Header van de pagina -->
+            <div class="navigation"> <!-- Navigatie sectie -->
+                <div class="text-right">Marijn de Serière</div> <!-- Naam rechts uitgelijnd -->
+                <nav>
+                    <ul> <!-- Ongeordende lijst van links -->
+                        <li><a href="homepage.html" title="Ga naar de homepage">HOME</a></li> <!-- Link naar de homepage -->
+                        <li><a href="profiel.html" title="Bekijk mijn profiel">PROFIEL</a></li> <!-- Link naar profielpagina -->
+                        <li><a href="mijn-werk.html" title="Bekijk mijn werk">MIJN WERK</a></li> <!-- Link naar mijn werk pagina -->
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <section class="intro-article"> <!-- Inleidend artikel -->
+            <img id="centered-image" class="image" src="../images/Marijn selfie lachen.JPG" alt="Foto van Marijn de Serière lachend" role="img"> <!-- Foto van Marijn -->
+            <div class="intro-content"> <!-- Inhoud van het inleidende artikel -->
+                <h2>Even voorstellen!</h2> <!-- Kopje -->
+                <p>Hallo, ik ben Marijn de Serière. Ik ben 22 jaar oud en studeer Communicatie Multimedia Design aan de HAN in Arnhem. Dit is mijn portfoliowebsite waar ik mijn werk deel. Klik op de button hieronder om meer over mijn skills te lezen.</p> <!-- Introductietekst -->
+                <a href="profiel.html" title="Klik hier om naar mijn profiel te gaan"> <!-- Link naar profiel -->
+                    <button aria-label="Ga naar mijn profiel">NAAR MIJN PROFIEL</button> <!-- Knop die naar profiel linkt -->
+                </a>
+            </div>
+            <div class="quote"> <!-- Citaat sectie -->
+                <p>"Ik zeg altijd maar: Het komt altijd goed en anders toch"</p> <!-- Persoonlijk citaat -->
+            </div>
+        </section>
+
+        <section class="highlights"> <!-- Sectie voor hoogtepunten van Marijn's werk -->
+            <h2>Highlights</h2> <!-- Titel van deze sectie -->
+            <div class="images"> <!-- Container voor de afbeeldingen van de hoogtepunten -->
+                <!-- Eerste project afbeelding en beschrijving -->
+                <div class="image-container">
+                    <img class="image" src="../images/Cospace vr wereld 4 L2.png" alt="VR wereld van het project White Box, gemaakt in Cospace" role="img">
+                    <p>Een VR wereld die ik heb gemaakt voor het project 'White Cube'. Meer hierover vind je onder CURSUSSEN.</p>
+                    <a href="mijn-werk.html" title="Bekijk mijn werk in het project White Cube">
+                        <button aria-label="Bekijk het project White Cube">NAAR MIJN WERK</button>
+                    </a>
+                </div>
+                <!-- Tweede project afbeelding en beschrijving -->
+                <div class="image-container">
+                    <img class="image" src="../images/LOL surprise prototype L1.png" alt="Bouwtekening van het LOL Surprise prototype" role="img">
+                    <p>Dit is een bouwtekening voor een prototype dat ik maakte voor LOL Surprise. Het prototype is te zien onder CURSUSSEN.</p>
+                    <a href="mijn-werk.html" title="Bekijk mijn werk in het LOL Surprise project">
+                        <button aria-label="Bekijk het LOL Surprise project">NAAR MIJN WERK</button>
+                    </a>
+                </div>
+                <!-- Derde project afbeelding en beschrijving -->
+                <div class="image-container">
+                    <img class="image" src="../images/Poster eind L1.png" alt="Poster die ik heb gemaakt aan het einde van cursus 1, leerjaar 1" role="img">
+                    <p>Deze poster is het eerste echte werk dat ik heb ontworpen. Ik ben er trots op, ondanks dat ik nu wat verbeterpunten zie.</p>
+                    <a href="mijn-werk.html" title="Bekijk mijn eerste werk, de poster">
+                        <button aria-label="Bekijk de poster">NAAR MIJN WERK</button>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="call-to-action"> <!-- Call-to-action sectie voor verdere interactie -->
+            <h2>Call to Action!</h2> <!-- Titel -->
+            <p>Wil je meer ontdekken of contact met me opnemen? Kijk onder aan de pagina waar mijn contact gegeven en mijn socials zijn om verder te verkennen of met mij in contact te komen!</p> <!-- Beschrijving -->
+        </section>
+
+        <footer class="footer"> <!-- Voettekst -->
+            <div class="footer-section"> <!-- Sectie voor contact -->
+                <h3>Huur mij in!</h3>
+                <p>Ik ben beschikbaar als freelancer!</p>
+                <p>marijndeseriere@hotmail.com</p>
+            </div>
+            <div class="footer-section"> <!-- Locatie sectie -->
+                <h3>De koffie staat voor u klaar!</h3>
+                <p>Doorwerth, Arnhem</p>
+            </div>
+            <div class="footer-section"> <!-- Sectie voor voorwaarden -->
+                <h3>Voorwaarden</h3>
+                <p><a href="#cookies" title="Lees de cookievoorwaarden">Cookies</a></p>
+                <p><a href="#privacy" title="Lees de privacyvoorwaarden">Privacy voorwaarden</a></p>
+            </div>
+            <div class="footer-section"> <!-- Social media sectie -->
+                <h3>Socials</h3>
+                <div class="social-icons"> <!-- Container voor social media iconen -->
+                    <a href="https://youtube.com" title="Bekijk mijn YouTube kanaal" target="_blank">
+                        <img class="social-icon" src="../images/youtube-icon.png" alt="YouTube icon">
+                    </a>
+                    <a href="https://twitter.com" title="Volg mij op Twitter" target="_blank">
+                        <img class="social-icon" src="../images/twitter icon.jpg" alt="Twitter icon">
+                    </a>
+                    <a href="https://facebook.com" title="Volg mij op Facebook" target="_blank">
+                        <img class="social-icon" src="../images/facebook.png" alt="Facebook icon">
+                    </a>
+                    <a href="https://instagram.com" title="Volg mij op Instagram" target="_blank">
+                        <img class="social-icon" src="../images/instagram-icon.png" alt="Instagram icon">
+                    </a>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
